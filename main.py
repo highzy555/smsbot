@@ -27,12 +27,10 @@ from string import ascii_uppercase, digits
 import uuid
 import random
 import time
-import fade
 import httpx
 from httpx import get, Client
 from httpx import *
 import asyncio
-import validators
 from datetime import datetime, timedelta
 from nextcord import Activity, ActivityType, Status
 import subprocess
