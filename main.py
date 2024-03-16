@@ -36,6 +36,20 @@ import validators
 from datetime import datetime, timedelta
 from nextcord import Activity, ActivityType, Status
 import subprocess
+from flask import Flask, render_template
+from threading import Thread
+app = Flask('')
+@app.route('/')
+def home():
+  return "bot python is online!"
+def index():
+  return render_template("index.html")
+def run():
+  app.run(host='0.0.0.0', port=8080)
+def highzy():
+  t = Thread(target=run)
+  t.start()
+highzy()
 limit = 100
 channelid = 1218569035889770567
 prefix = "h!"
