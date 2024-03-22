@@ -79,8 +79,8 @@ def run():
         await ctx.message.delete()
         if ctx.channel.id == channelid:
                 if amount < limit+1:
-                    post(webhook,json={"content": f"** # ยิงไปที่ {phone}***** โดย <@{ctx.message.author.id}>**"})
-                    await ctx.send(f"** # __เบอร์  📵     : ||{phone}||__ \nสถานะ  :envelope_with_arrow:     : กำลังโจมตี ⚡ \nเป็นเวลา  :bar_chart:  : {amount} นาที __ **", delete_after=5)
+                    post(webhook,json={"content": f"** # ยิงไปที่ {phone} จำนวน{amount} โดย <@{ctx.message.author.id}>**"})
+                    await ctx.send(f"** # __เบอร์  📵     : ||{phone}||__ \nสถานะ  :envelope_with_arrow:     : กำลังโจมตี ⚡ \nเป็นเวลา  :bar_chart:  : {amount} วินาที __ **", delete_after=5)
 
                     def trueh():
                         try:
