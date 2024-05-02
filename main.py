@@ -48,7 +48,7 @@ def highzy():
   t = Thread(target=run)
   t.start()
 highzy()
-limit = 100
+limit = 35
 channelid = 1218569035889770567
 prefix = "h!"
 token = os.environ.get('bot')
